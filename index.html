@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eae5d9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Filigrane">
+  <meta name="description" content="Transformez une photo en tableau string art, avec parcours de clou en clou et exports PNG, SVG et CSV.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Filigrane — Atelier de portraits en fil</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brandmark" aria-hidden="true"><span></span></span><div><div class="brandname">FILIGRANE<span class="branddot">.</span></div><div class="brandsub">L'ATELIER DU FIL</div></div></div>
+  <span class="topstatus"><span class="statusdot"></span> Création locale · Sans compte</span>
+</header>
+<main class="page">
+  <div class="intro">
+    <div class="eyebrow"><span class="eyeline"></span> DE LA PHOTO À L'ŒUVRE</div>
+    <h1>Une image.<br><em>Un seul fil.</em></h1>
+    <p>Créez un portrait avec des centaines de clous et un fil noir tendu de point en point. La photo devient un tracé réalisable à la main.</p>
+  </div>
+
+  <div class="workspace">
+    <aside class="config-panel" aria-label="Réglages de la création">
+      <section class="setting-section">
+        <div class="sectionhead"><span class="step-index">01</span><h2>Votre photographie</h2></div>
+        <input id="photoInput" class="visually-hidden" type="file" accept="image/*">
+        <label for="photoInput" class="upload" id="uploadLabel">
+          <span class="upload-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h4l2-2h4l2 2h4v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          </span>
+          <strong id="uploadTitle">Prendre ou choisir une photo</strong>
+          <span id="uploadHint">Appareil photo ou photothèque iPhone</span>
+        </label>
+        <div id="cropArea" class="crop-area hidden">
+          <div class="crop-frame"><canvas id="photoCanvas" width="360" height="360" aria-label="Cadrage de la photo, glisser pour déplacer"></canvas><span class="crop-hint">Glissez pour recadrer</span></div>
+          <div class="range-head"><label for="zoomRange">Zoom de la photo</label><output id="zoomValue">100 %</output></div>
+          <input id="zoomRange" type="range" min="100" max="250" step="5" value="100">
+        </div>
+        <button type="button" class="demo-link" id="demoButton">Ou essayer avec une image de démonstration <span aria-hidden="true">↗</span></button>
+      </section>
+
+      <section class="setting-section">
+        <div class="sectionhead"><span class="step-index">02</span><h2>Le cadre & le fil</h2></div>
+        <div class="range-head"><label for="nailsRange">Nombre de clous</label><output id="nailsValue">200 clous</output></div>
+        <input id="nailsRange" type="range" min="100" max="300" step="20" value="200">
+        <div class="range-head"><label for="linesRange">Passages de fil</label><output id="linesValue">2 400 passages</output></div>
+        <input id="linesRange" type="range" min="600" max="4000" step="200" value="2400">
+        <div class="field-row">
+          <div class="field-text"><label for="diameterInput">Diamètre du cadre</label><small>Pour estimer la longueur de fil</small></div>
+          <div class="number-input"><input id="diameterInput" type="number" min="10" max="200" step="5" value="50" inputmode="decimal"><span>cm</span></div>
+        </div>
+        <div class="range-head"><label for="contrastRange">Contraste de l'image</label><output id="contrastValue">Normal</output></div>
+        <input id="contrastRange" type="range" min="70" max="160" step="10" value="110">
+        <div class="tip"><span class="tip-icon">✦</span><span>Une photo bien éclairée, avec un sujet centré et un fond simple, donne les meilleurs résultats.</span></div>
+      </section>
+
+      <div class="generate-wrap"><button type="button" class="generate-btn" id="generateButton" disabled><span id="generateText">Choisir une photo pour commencer</span><span aria-hidden="true" class="btn-arrow">↗</span></button><button type="button" class="cancel-btn hidden" id="cancelButton">Arrêter le calcul</button>
+        <div id="progressArea" class="progress-wrap hidden" aria-live="polite"><div class="progress-track"><div id="progressFill" class="progress-fill"></div></div><div class="progress-label"><span id="progressText">Calcul du parcours…</span><span id="progressPercent">0 %</span></div></div>
+        <p id="errorMessage" class="error hidden" role="alert"></p>
+      </div>
+    </aside>
+
+    <section class="result-panel" aria-label="Aperçu de votre tableau">
+      <div class="result-top"><div><div class="result-eyebrow">APERÇU DE L'ŒUVRE</div><h2>Votre tableau</h2></div><span class="preview-badge" id="previewBadge">EN ATTENTE</span></div>
+      <div class="artwork-shell"><div class="artwork-inner"><canvas id="artCanvas" width="900" height="900" aria-label="Prévisualisation du string art"></canvas><div id="emptyOverlay" class="empty-overlay"><div class="placeholder-icon" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="51" stroke="currentColor" stroke-width="1"/><path d="M59 8L110 61 21 97 95 28 40 109 9 53 106 46 60 8Z" stroke="currentColor" stroke-width=".65"/><path d="M21 21L105 81 47 110 7 58 83 14 100 95 21 21Z" stroke="currentColor" stroke-width=".65"/>
+          <circle cx="60" cy="9" r="2.5" fill="currentColor"/><circle cx="110" cy="60" r="2.5" fill="currentColor"/><circle cx="60" cy="111" r="2.5" fill="currentColor"/><circle cx="9" cy="60" r="2.5" fill="currentColor"/></svg></div><strong>La magie du fil noir</strong><span>Importez une photo puis lancez la création<br>pour découvrir votre tableau.</span></div></div></div>
+      <div id="results" class="results hidden">
+        <div class="stat-grid"><div class="stat"><strong id="statNails">—</strong><span>clous à poser</span></div><div class="stat"><strong id="statLines">—</strong><span>segments de fil</span></div><div class="stat"><strong id="statLength">—</strong><span>mètres de fil estimés*</span></div></div>
+        <div class="steps-area"><div class="steps-head"><h3>Mode fabrication</h3><span id="stepIndicator">2 400 / 2 400</span></div><input type="range" min="0" max="2400" value="2400" id="stepRange" aria-label="Afficher les étapes de fabrication"><div class="step-actions"><button type="button" class="step-btn" id="prevStep">← Précédent</button><div id="currentInstruction" class="current-instruction">Parcours complet</div><button type="button" class="step-btn" id="nextStep">Suivant →</button></div></div>
+        <div class="exports"><button type="button" id="savePNG" class="export-btn"><span>↓</span> Image PNG</button><button type="button" id="saveSVG" class="export-btn"><span>↓</span> Tracé SVG</button><button type="button" id="saveCSV" class="export-btn"><span>↓</span> Guide CSV</button></div>
+        <p class="footnote">* Longueur estimée d'après les segments droits, avec une marge de 2 cm par clou traversé. Prévoir du fil supplémentaire pour le départ, la fin et les pertes.</p>
+      </div>
+      <div id="resultFooter" class="result-footer"><span class="small-asterisk">✳</span> Chaque ligne relie deux clous. Le parcours reste continu, sans couper le fil.</div>
+    </section>
+  </div>
+  <div class="how-it-works"><h2>Du virtuel au réel.</h2><p>Disposez les clous à intervalles réguliers sur un cercle, en numérotant le clou du haut <strong>0</strong>, puis dans le sens des aiguilles d'une montre. Suivez ensuite les paires de clous dans le fichier CSV, ou avancez étape par étape sur l'écran. Le fil reste continu pendant toute la réalisation.</p></div>
+</main>
+<footer class="site-footer"><span>FILIGRANE · ATELIER NUMÉRIQUE</span><span>Votre photo reste sur votre appareil.</span></footer>
+<script src="app.js"></script>
+</body>
+</html>
