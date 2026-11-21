@@ -2,18 +2,18 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#efece5"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Filigrane V3"><meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="description" content="Filigrane V3 : string art optimisé pour isoler uniquement les personnes, supprimer le fond et renforcer visage et silhouette.">
-<link rel="apple-touch-icon" href="./icon-180.png"><title>FILIGRANE V3 — Personnes uniquement</title>
-<style>:root{--paper:#efece5;--panel:#faf8f4;--ink:#24251f;--muted:#77796f;--stroke:#dedbd1;--accent:#a75c45;--accentlight:#f1e7de;--green:#437c64;--white:#fffefb}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.58}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.wrap{max-width:1190px;margin:auto;padding:0 20px}.mast{background:#fbf9f5;border-bottom:1px solid var(--stroke)}.mastinner{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:10px}.logo{display:flex;align-items:center;gap:11px}.mark{border-radius:50%;width:42px;height:42px;display:grid;place-items:center;border:2px solid #2b2b28;font-size:22px;line-height:1;color:var(--accent)}.logotxt strong{display:block;letter-spacing:.15em;font-size:17px;line-height:1.2}.logotxt small{display:block;color:var(--muted);font-size:9px;letter-spacing:.18em;margin-top:3px}.version{font-size:11px;padding:7px 10px;background:var(--accentlight);border:1px solid #e4cfc1;border-radius:20px;color:#8d4d38;font-weight:800}.hero{padding:37px 0 27px}.eyebrow{color:var(--accent);font-size:10px;letter-spacing:.20em;font-weight:800}.hero h1{font:normal clamp(36px,4.5vw,57px)/1.11 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:10px 0}.hero em{color:var(--accent);font-weight:normal}.hero p{max-width:720px;color:#686960;margin:10px 0 0;font-size:14px}.layout{display:grid;grid-template-columns:minmax(325px,.87fr) minmax(0,1.13fr);align-items:start;gap:21px;margin-bottom:45px}.panel{background:var(--panel);border-radius:16px;border:1px solid #dbd7cc;box-shadow:0 12px 32px #22210c0a;overflow:hidden}.section{padding:23px 23px 24px}.section+.section{border-top:1px solid var(--stroke)}.title-line{display:flex;align-items:center;gap:10px;margin-bottom:16px}.step{display:grid;place-items:center;width:27px;height:27px;flex:0 0 auto;background:var(--accentlight);color:#975c46;border-radius:100%;font-size:11px;font-weight:800}.title-line h2{font-size:16px;margin:0;font-weight:750}.uploader{cursor:pointer;min-height:108px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;text-align:center;border:1.5px dashed #bcb5a7;background:#f2eee8;border-radius:12px;padding:14px 12px}.uploader .cam{font-size:29px;line-height:1}.uploader strong{font-size:13px}.uploader small{font-size:11px;color:var(--muted)}.cropbox{margin-top:17px;max-width:270px;margin-inline:auto}.cropbox canvas{width:100%;height:auto;aspect-ratio:1;display:block;touch-action:none;user-select:none;background:#fff;border-radius:50%;box-shadow:0 1px 8px #2222}.crop-caption{font-size:11px;color:#7b796c;text-align:center;margin-top:7px}.smallaction{border:0;color:#974f38;text-decoration:underline;text-underline-offset:3px;background:transparent;font-size:12px;padding:13px 0 0}.field{margin-top:14px}.field:first-child{margin-top:0}.field-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:2px}.field-head label{font-size:12px;font-weight:700}.field-head output{font-variant-numeric:tabular-nums;color:#9d543f;font-size:11px;font-weight:800}.field small,.note{font-size:11px;color:var(--muted);line-height:1.48}.field input[type=range],.steprange{display:block;appearance:none;-webkit-appearance:none;width:100%;background:transparent;accent-color:var(--accent);margin:7px 0 4px;height:19px}.field input[type=range]::-webkit-slider-runnable-track,.steprange::-webkit-slider-runnable-track{height:4px;border-radius:5px;background:#dcd5c9}.field input[type=range]::-webkit-slider-thumb,.steprange::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;background:var(--accent);height:19px;width:19px;border:3px solid #fff;border-radius:50%;box-shadow:0 1px 5px #0003;margin-top:-8px}.segmented{display:flex;gap:5px;background:#ede8de;padding:4px;border-radius:10px}.segmented button{flex:1;min-width:0;border:1px solid transparent;border-radius:8px;background:transparent;padding:9px 5px;font-size:12px;font-weight:750;color:#777065}.segmented button[aria-pressed=true]{background:#fffefa;border-color:#d9cabe;color:var(--ink);box-shadow:0 1px 4px #0001}.inline-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:12px}.smallbtn{border:1px solid #d7cfc1;background:#fffdf8;color:#494337;padding:9px 11px;border-radius:8px;font-size:12px;font-weight:700}.smallbtn.selected{background:var(--ink);color:#fff}.smallbtn.active{background:#e8ede7;color:var(--green);border-color:#b5d0bf}.primarymini{background:#eee0d3;border-color:#d6bda9;color:#8b4732}.maskstatus{background:#f2ede4;border-radius:8px;padding:10px 11px;margin-top:11px;color:#676258;font-size:11px;line-height:1.55}.maskstatus strong{color:#8c4a37}.statusbusy{color:#915c32!important}.statusok{color:var(--green)!important}.guidenote{margin:10px 0 0;font-size:11px;color:var(--muted)}.divider-mini{height:1px;background:var(--stroke);margin:17px 0}.preview-prep{position:relative;background:#eee9df;border-radius:11px;padding:12px;margin-top:12px;text-align:center}.preview-prep canvas{display:block;width:min(100%,220px);aspect-ratio:1;margin:auto;background:white;border-radius:50%}.preview-prep small{display:block;margin-top:8px;color:#6e665f;font-size:11px}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.numericrow{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--stroke);margin-top:14px;padding-top:13px}.numericrow label{font-size:12px;font-weight:700}.numericrow input{width:69px;text-align:right;border-radius:7px;border:1px solid var(--stroke);background:#fff;padding:8px 6px}.generate-section{padding:0 23px 23px}.mainbtn{width:100%;min-height:55px;background:var(--ink);color:white;font-size:14px;font-weight:800;padding:13px 15px;border:0;border-radius:9px;text-align:center}.cancel{display:block;margin:9px auto 0;border:0;background:transparent;color:#a2573e;font-size:12px;text-decoration:underline}.progress{margin-top:12px}.progress .track{height:6px;background:#dfd8ce;border-radius:5px;overflow:hidden}.progress .fill{height:100%;background:var(--accent);width:0%}.progresslabel{display:flex;justify-content:space-between;color:var(--muted);margin-top:6px;font-size:11px}.err{font-size:12px;color:#a54127;margin-top:9px}.result{padding:23px}.result-header{display:flex;justify-content:space-between;align-items:center;gap:8px}.result-header h2{font:normal 29px/1.14 Georgia,serif;margin:5px 0 0}.badge{font-size:10px;letter-spacing:.06em;font-weight:800;border-radius:20px;padding:7px 9px;color:#896b50;background:#f0e5d7;white-space:nowrap}.badge.good{color:#376e55;background:#e4eee5}.three-label{font-size:10px;letter-spacing:.10em;color:#897c70;font-weight:800;text-transform:uppercase;margin-bottom:7px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:19px}.compcell{border:1px solid #ded7cd;padding:10px;background:#f0ece5;border-radius:11px;min-width:0}.compcell canvas{width:100%;aspect-ratio:1;display:block;border-radius:50%;background:white}.artarea{background:#eee9e0;border:1px solid #ded7cc;border-radius:11px;margin-top:14px;padding:13px}.artarea canvas{width:100%;aspect-ratio:1;display:block;border-radius:50%;background:white}.result-status{text-align:center;color:var(--muted);font-size:12px;margin-top:13px}.resultmeta{padding-top:17px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#f0ece4;border-radius:9px;padding:14px 3px;margin-bottom:18px}.stats>div{display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid #ded7ca}.stats>div:last-child{border-right:0}.stats strong{font:normal 23px Georgia,serif}.stats small{font-size:10px;color:var(--muted)}.stepshead{display:flex;justify-content:space-between;align-items:center;gap:10px}.stepshead strong{font-size:13px}.stepshead output{font-size:11px;color:var(--accent);font-weight:800}.steps-actions{display:grid;grid-template-columns:1fr 1.4fr 1fr;align-items:center;gap:6px;margin-top:9px}.steps-actions button{background:#fff;border:1px solid var(--stroke);border-radius:7px;font-size:11px;padding:10px 4px}.steps-actions strong{font-size:11px;text-align:center;color:var(--accent)}.exportactions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:18px}.exportactions button{background:#fff;border:1px solid var(--stroke);padding:11px 4px;border-radius:7px;font-size:11px;font-weight:750}.foot{font-size:10px;color:var(--muted);margin:15px 0 0}.footer{border-top:1px solid #d3cec2;padding:21px 0 35px;color:#827b70;font-size:11px}.footerinner{display:flex;justify-content:space-between;gap:14px}.noscript{background:#fff4ed;padding:15px;color:#a43c20}.video-hint{display:flex;align-items:center;gap:8px;margin-top:13px;padding:10px;background:#eee7da;border-radius:8px;color:#70685b;font-size:11px}.face-counter{font-size:11px;color:#87614e;margin-top:7px}.rectool{margin-top:11px}.sep-note{color:#8a8475;font-size:10px;margin-top:9px}.model-note{font-size:10px;color:#888071;margin-top:8px}
+<meta name="theme-color" content="#efece5"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Filigrane V4"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="description" content="Filigrane V4 : string art optimisé pour isoler uniquement les personnes, supprimer le fond et renforcer visage et silhouette.">
+<link rel="apple-touch-icon" href="./icon-180.png"><title>FILIGRANE V4 — Personnes uniquement</title>
+<style>:root{--paper:#efece5;--panel:#faf8f4;--ink:#24251f;--muted:#77796f;--stroke:#dedbd1;--accent:#a75c45;--accentlight:#f1e7de;--green:#437c64;--white:#fffefb}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.58}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.wrap{max-width:1190px;margin:auto;padding:0 20px}.mast{background:#fbf9f5;border-bottom:1px solid var(--stroke)}.mastinner{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:10px}.logo{display:flex;align-items:center;gap:11px}.mark{border-radius:50%;width:42px;height:42px;display:grid;place-items:center;border:2px solid #2b2b28;font-size:22px;line-height:1;color:var(--accent)}.logotxt strong{display:block;letter-spacing:.15em;font-size:17px;line-height:1.2}.logotxt small{display:block;color:var(--muted);font-size:9px;letter-spacing:.18em;margin-top:3px}.version{font-size:11px;padding:7px 10px;background:var(--accentlight);border:1px solid #e4cfc1;border-radius:20px;color:#8d4d38;font-weight:800}.hero{padding:37px 0 27px}.eyebrow{color:var(--accent);font-size:10px;letter-spacing:.20em;font-weight:800}.hero h1{font:normal clamp(36px,4.5vw,57px)/1.11 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:10px 0}.hero em{color:var(--accent);font-weight:normal}.hero p{max-width:720px;color:#686960;margin:10px 0 0;font-size:14px}.layout{display:grid;grid-template-columns:minmax(325px,.87fr) minmax(0,1.13fr);align-items:start;gap:21px;margin-bottom:45px}.panel{background:var(--panel);border-radius:16px;border:1px solid #dbd7cc;box-shadow:0 12px 32px #22210c0a;overflow:hidden}.section{padding:23px 23px 24px}.section+.section{border-top:1px solid var(--stroke)}.title-line{display:flex;align-items:center;gap:10px;margin-bottom:16px}.step{display:grid;place-items:center;width:27px;height:27px;flex:0 0 auto;background:var(--accentlight);color:#975c46;border-radius:100%;font-size:11px;font-weight:800}.title-line h2{font-size:16px;margin:0;font-weight:750}.uploader{cursor:pointer;min-height:108px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;text-align:center;border:1.5px dashed #bcb5a7;background:#f2eee8;border-radius:12px;padding:14px 12px}.uploader .cam{font-size:29px;line-height:1}.uploader strong{font-size:13px}.uploader small{font-size:11px;color:var(--muted)}.cropbox{margin-top:17px;max-width:270px;margin-inline:auto}.cropbox canvas{width:100%;height:auto;aspect-ratio:1;display:block;touch-action:none;user-select:none;background:#fff;border-radius:50%;box-shadow:0 1px 8px #2222}.crop-caption{font-size:11px;color:#7b796c;text-align:center;margin-top:7px}.smallaction{border:0;color:#974f38;text-decoration:underline;text-underline-offset:3px;background:transparent;font-size:12px;padding:13px 0 0}.field{margin-top:14px}.field:first-child{margin-top:0}.field-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:2px}.field-head label{font-size:12px;font-weight:700}.field-head output{font-variant-numeric:tabular-nums;color:#9d543f;font-size:11px;font-weight:800}.field small,.note{font-size:11px;color:var(--muted);line-height:1.48}.field input[type=range],.steprange{display:block;appearance:none;-webkit-appearance:none;width:100%;background:transparent;accent-color:var(--accent);margin:7px 0 4px;height:19px}.field input[type=range]::-webkit-slider-runnable-track,.steprange::-webkit-slider-runnable-track{height:4px;border-radius:5px;background:#dcd5c9}.field input[type=range]::-webkit-slider-thumb,.steprange::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;background:var(--accent);height:19px;width:19px;border:3px solid #fff;border-radius:50%;box-shadow:0 1px 5px #0003;margin-top:-8px}.segmented{display:flex;gap:5px;background:#ede8de;padding:4px;border-radius:10px}.segmented button{flex:1;min-width:0;border:1px solid transparent;border-radius:8px;background:transparent;padding:9px 5px;font-size:12px;font-weight:750;color:#777065}.segmented button[aria-pressed=true]{background:#fffefa;border-color:#d9cabe;color:var(--ink);box-shadow:0 1px 4px #0001}.inline-actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:12px}.smallbtn{border:1px solid #d7cfc1;background:#fffdf8;color:#494337;padding:9px 11px;border-radius:8px;font-size:12px;font-weight:700}.smallbtn.selected{background:var(--ink);color:#fff}.smallbtn.active{background:#e8ede7;color:var(--green);border-color:#b5d0bf}.primarymini{background:#eee0d3;border-color:#d6bda9;color:#8b4732}.maskstatus{background:#f2ede4;border-radius:8px;padding:10px 11px;margin-top:11px;color:#676258;font-size:11px;line-height:1.55}.maskstatus strong{color:#8c4a37}.statusbusy{color:#915c32!important}.statusok{color:var(--green)!important}.guidenote{margin:10px 0 0;font-size:11px;color:var(--muted)}.divider-mini{height:1px;background:var(--stroke);margin:17px 0}.preview-prep{position:relative;background:#eee9df;border-radius:11px;padding:12px;margin-top:12px;text-align:center}.preview-prep canvas{display:block;width:min(100%,220px);aspect-ratio:1;margin:auto;background:white;border-radius:50%}.preview-prep small{display:block;margin-top:8px;color:#6e665f;font-size:11px}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.numericrow{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid var(--stroke);margin-top:14px;padding-top:13px}.numericrow label{font-size:12px;font-weight:700}.numericrow input{width:69px;text-align:right;border-radius:7px;border:1px solid var(--stroke);background:#fff;padding:8px 6px}.generate-section{padding:0 23px 23px}.mainbtn{width:100%;min-height:55px;background:var(--ink);color:white;font-size:14px;font-weight:800;padding:13px 15px;border:0;border-radius:9px;text-align:center}.cancel{display:block;margin:9px auto 0;border:0;background:transparent;color:#a2573e;font-size:12px;text-decoration:underline}.progress{margin-top:12px}.progress .track{height:6px;background:#dfd8ce;border-radius:5px;overflow:hidden}.progress .fill{height:100%;background:var(--accent);width:0%}.progresslabel{display:flex;justify-content:space-between;color:var(--muted);margin-top:6px;font-size:11px}.err{font-size:12px;color:#a54127;margin-top:9px}.result{padding:23px}.result-header{display:flex;justify-content:space-between;align-items:center;gap:8px}.result-header h2{font:normal 29px/1.14 Georgia,serif;margin:5px 0 0}.badge{font-size:10px;letter-spacing:.06em;font-weight:800;border-radius:20px;padding:7px 9px;color:#896b50;background:#f0e5d7;white-space:nowrap}.badge.good{color:#376e55;background:#e4eee5}.three-label{font-size:10px;letter-spacing:.10em;color:#897c70;font-weight:800;text-transform:uppercase;margin-bottom:7px}.comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:19px}.compcell{border:1px solid #ded7cd;padding:10px;background:#f0ece5;border-radius:11px;min-width:0}.compcell canvas{width:100%;aspect-ratio:1;display:block;border-radius:50%;background:white}.artarea{background:#eee9e0;border:1px solid #ded7cc;border-radius:11px;margin-top:14px;padding:13px}.artarea canvas{width:100%;aspect-ratio:1;display:block;border-radius:50%;background:white}.result-status{text-align:center;color:var(--muted);font-size:12px;margin-top:13px}.resultmeta{padding-top:17px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#f0ece4;border-radius:9px;padding:14px 3px;margin-bottom:18px}.stats>div{display:flex;flex-direction:column;align-items:center;text-align:center;border-right:1px solid #ded7ca}.stats>div:last-child{border-right:0}.stats strong{font:normal 23px Georgia,serif}.stats small{font-size:10px;color:var(--muted)}.stepshead{display:flex;justify-content:space-between;align-items:center;gap:10px}.stepshead strong{font-size:13px}.stepshead output{font-size:11px;color:var(--accent);font-weight:800}.steps-actions{display:grid;grid-template-columns:1fr 1.4fr 1fr;align-items:center;gap:6px;margin-top:9px}.steps-actions button{background:#fff;border:1px solid var(--stroke);border-radius:7px;font-size:11px;padding:10px 4px}.steps-actions strong{font-size:11px;text-align:center;color:var(--accent)}.exportactions{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:18px}.exportactions button{background:#fff;border:1px solid var(--stroke);padding:11px 4px;border-radius:7px;font-size:11px;font-weight:750}.foot{font-size:10px;color:var(--muted);margin:15px 0 0}.footer{border-top:1px solid #d3cec2;padding:21px 0 35px;color:#827b70;font-size:11px}.footerinner{display:flex;justify-content:space-between;gap:14px}.noscript{background:#fff4ed;padding:15px;color:#a43c20}.video-hint{display:flex;align-items:center;gap:8px;margin-top:13px;padding:10px;background:#eee7da;border-radius:8px;color:#70685b;font-size:11px}.face-counter{font-size:11px;color:#87614e;margin-top:7px}.rectool{margin-top:11px}.sep-note{color:#8a8475;font-size:10px;margin-top:9px}.model-note{font-size:10px;color:#888071;margin-top:8px}.maskstatus[data-state="warning"]{background:#fff0e7;border:1px solid #e9bca6;color:#9c472d}.maskstatus[data-state="ready"]{background:#eaf2ea;border:1px solid #b7d5c0;color:#235d42}@media(max-width:560px){.comparison{grid-template-columns:repeat(2,minmax(0,1fr))}.compcell:last-child{grid-column:1/-1}.compcell:last-child canvas{max-width:225px;margin:auto}}
 @media(max-width:950px){.layout{grid-template-columns:1fr}.result{max-width:720px;width:100%;margin:auto}.settings-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:575px){.wrap{padding:0 14px}.mastinner{min-height:69px}.hero{padding:26px 5px 23px}.hero h1{font-size:43px}.hero p{font-size:13px}.layout{gap:16px;margin-bottom:30px}.section{padding:21px 19px}.generate-section{padding:0 19px 21px}.result{padding:19px 16px}.result-header h2{font-size:25px}.cropbox{max-width:235px}.comparison{gap:7px}.compcell{padding:6px}.artarea{padding:8px}.footerinner{display:block}.footerinner span{display:block;margin-bottom:6px}.brand .version{font-size:10px}.settings-grid{gap:0 11px}.stats strong{font-size:21px}}
 </style>
 </head>
 <body>
-<header class="mast"><div class="wrap mastinner"><div class="logo"><span class="mark" aria-hidden="true">✳</span><div class="logotxt"><strong>FILIGRANE.</strong><small>ATELIER DE PORTRAITS EN FIL</small></div></div><span class="version">V3 · PORTRAIT</span></div></header>
+<header class="mast"><div class="wrap mastinner"><div class="logo"><span class="mark" aria-hidden="true">✳</span><div class="logotxt"><strong>FILIGRANE.</strong><small>ATELIER DE PORTRAITS EN FIL</small></div></div><span class="version">V4 · PORTRAIT</span></div></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">PHOTO · PREMIER PLAN · FIL NOIR</div><h1>Votre portrait.<br><em>Un seul fil.</em></h1><p>Isolez uniquement les personnes, effacez presque totalement le décor et renforcez la silhouette ainsi que les visages avant de fabriquer un tableau avec un fil continu.</p></section>
+<section class="hero"><div class="eyebrow">PHOTO · PREMIER PLAN · FIL NOIR</div><h1>Votre portrait.<br><em>Un seul fil.</em></h1><p>Conservez uniquement les personnes, leurs visages et leurs silhouettes. Le fond devient blanc. Vérifiez le détourage avant de lancer le calcul du fil continu.</p></section>
 <div class="layout">
 <div class="panel controls">
 <section class="section"><div class="title-line"><span class="step">01</span><h2>Photo & cadrage</h2></div>
@@ -24,18 +24,18 @@
 </section>
 <section class="section"><div class="title-line"><span class="step">02</span><h2>Personnes & visages</h2></div>
 <div class="segmented" id="modes"><button type="button" data-mode="portrait" aria-pressed="true">Personnes uniquement</button><button type="button" data-mode="silhouette" aria-pressed="false">Silhouette</button><button type="button" data-mode="standard" aria-pressed="false">Photo entière</button></div>
-<div class="inline-actions"><button type="button" class="smallbtn primarymini" id="autoMask" disabled>✦ Isoler les personnes (IA V3)</button><button type="button" class="smallbtn" id="resetMask" disabled>Réinitialiser</button></div>
-<div id="maskStatus" class="maskstatus">Importez une photo. Le détourage automatique nécessite Internet à la première utilisation ; il s’exécute sur votre appareil.</div>
+<div class="inline-actions"><button type="button" class="smallbtn primarymini" id="autoMask" disabled>✦ Détourer les personnes (IA)</button><button type="button" class="smallbtn" id="resetMask" disabled>Relancer le masque</button><button type="button" class="smallbtn" id="blankMask" disabled>Masque vide</button></div>
+<div id="maskStatus" class="maskstatus">Importez une photo. Le détourage automatique se charge sur votre appareil. Aucun fil ne sera généré avant validation du sujet.</div>
 <div class="divider-mini"></div>
-<div class="field"><div class="field-head"><label for="background">Présence du fond</label><output id="backgroundOut">0 %</output></div><input type="range" id="background" min="0" max="20" step="5" value="0"><small>0 % : fond supprimé. 20 % : léger rappel du décor si besoin.</small></div>
-<div class="field"><div class="field-head"><label for="details">Détails / contours</label><output id="detailsOut">70 %</output></div><input type="range" id="details" min="0" max="150" step="10" value="70"></div>
-<div class="field"><div class="field-head"><label for="facestrength">Priorité aux visages</label><output id="facestrengthOut">80 %</output></div><input type="range" id="facestrength" min="0" max="150" step="10" value="80"></div>
+<div class="field"><div class="field-head"><label for="background">Présence du fond</label><output id="backgroundOut">0 %</output></div><input type="range" id="background" min="0" max="20" step="5" value="0"><small>0 % recommandé : seules les personnes seront retenues. Le fond peut seulement être réintroduit volontairement.</small></div>
+<div class="field"><div class="field-head"><label for="details">Détails / contours</label><output id="detailsOut">110 %</output></div><input type="range" id="details" min="0" max="150" step="10" value="110"></div>
+<div class="field"><div class="field-head"><label for="facestrength">Priorité aux visages</label><output id="facestrengthOut">130 %</output></div><input type="range" id="facestrength" min="0" max="150" step="10" value="130"></div>
 <div class="rectool"><div class="inline-actions" id="tools"><button type="button" class="smallbtn selected" data-tool="move">↔ Cadrer</button><button type="button" class="smallbtn" data-tool="keep">✚ Garder</button><button type="button" class="smallbtn" data-tool="erase">− Effacer</button><button type="button" class="smallbtn" data-tool="face">◎ Visage</button></div><p class="guidenote">Garder / Effacer : peignez sur le portrait pour affiner le détourage. Visage : touchez chaque visage, y compris sur une photo de groupe.</p><div class="face-counter" id="faceCounter">Repères visages : 0 (centre par défaut)</div><button class="smallaction" type="button" id="clearFaces">Effacer les repères visages</button></div>
 <div class="field"><div class="field-head"><label for="brush">Taille du pinceau</label><output id="brushOut">35 px</output></div><input type="range" min="10" max="95" step="5" value="35" id="brush"></div>
 <div class="preview-prep"><canvas id="preparedCanvas" width="360" height="360" aria-label="Image préparée pour les fils"></canvas><small>Image préparée pour le calcul (noir = plus de fil)</small></div>
 </section>
 <section class="section"><div class="title-line"><span class="step">03</span><h2>Clous & calcul</h2></div>
-<div class="settings-grid"><div class="field"><div class="field-head"><label for="nails">Clous</label><output id="nailsOut">220</output></div><input id="nails" type="range" min="120" max="300" step="20" value="220"></div><div class="field"><div class="field-head"><label for="lines">Passages maxi.</label><output id="linesOut">2 400</output></div><input id="lines" type="range" min="600" max="4500" step="100" value="2400"></div></div>
+<div class="settings-grid"><div class="field"><div class="field-head"><label for="nails">Clous</label><output id="nailsOut">280</output></div><input id="nails" type="range" min="120" max="300" step="20" value="280"></div><div class="field"><div class="field-head"><label for="lines">Passages maxi.</label><output id="linesOut">3 200</output></div><input id="lines" type="range" min="600" max="4500" step="100" value="3200"></div></div>
 <div class="field"><div class="field-head"><label for="contrast">Contraste</label><output id="contrastOut">115 %</output></div><input id="contrast" type="range" min="70" max="180" step="5" value="115"></div>
 <div class="numericrow"><label for="diameter">Diamètre du cadre (cm)</label><input type="number" id="diameter" min="10" max="200" value="50" step="5" inputmode="decimal"></div>
 <div class="video-hint">✦ Arrêt intelligent : la génération peut s’arrêter avant le maximum si les nouveaux fils n’améliorent plus suffisamment le rendu.</div>
@@ -43,23 +43,24 @@
 <div class="generate-section"><button type="button" class="mainbtn" id="generate" disabled>Choisir une photo pour commencer ↗</button><button class="cancel hidden" type="button" id="cancel">Arrêter le calcul</button><div id="progress" class="progress hidden"><div class="track"><div class="fill" id="progressFill"></div></div><div class="progresslabel"><span id="progressText">Calcul...</span><span id="progressPct">0 %</span></div></div><div id="error" class="err hidden" role="alert"></div></div>
 </div>
 <div class="panel result" id="resultPanel"><div class="result-header"><div><div class="eyebrow">COMPARAISON</div><h2>Votre œuvre</h2></div><span id="stateBadge" class="badge">EN ATTENTE</span></div>
-<div class="comparison"><div class="compcell"><div class="three-label">01 · Photo</div><canvas id="sourceCanvas" width="340" height="340" aria-label="Photo d'origine"></canvas></div><div class="compcell"><div class="three-label">02 · Préparée</div><canvas id="smallPrepared" width="340" height="340" aria-label="Photo optimisée"></canvas></div></div>
-<div class="artarea"><div class="three-label">03 · Fils noirs / clous</div><canvas id="artCanvas" width="820" height="820" aria-label="String art final"></canvas></div><div class="result-status" id="resultStatus">Importez une photo pour commencer la comparaison.</div>
-<div class="resultmeta hidden" id="resultMeta"><div class="stats"><div><strong id="statNails">—</strong><small>clous</small></div><div><strong id="statLines">—</strong><small>passages</small></div><div><strong id="statLength">—</strong><small>mètres estimés</small></div></div><div class="stepshead"><strong>Guide de fabrication</strong><output id="stepsOut">0 / 0</output></div><input class="steprange" type="range" id="stepRange" min="0" max="1" value="1"><div class="steps-actions"><button id="prevStep" type="button">← Précédent</button><strong id="instruction">Parcours complet</strong><button id="nextStep" type="button">Suivant →</button></div><div class="exportactions"><button id="png" type="button">↓ PNG</button><button id="svg" type="button">↓ SVG</button><button id="csv" type="button">↓ Guide CSV</button></div><p class="foot">Le clou 0 est situé en haut du cercle, puis la numérotation tourne dans le sens des aiguilles d’une montre. Le parcours utilise un seul fil continu. Longueur indicative, prévoir une marge.</p></div>
+<div class="comparison"><div class="compcell"><div class="three-label">01 · Photo</div><canvas id="sourceCanvas" width="340" height="340" aria-label="Photo d'origine"></canvas></div><div class="compcell"><div class="three-label">02 · Personnes seules</div><canvas id="cutoutCanvas" width="340" height="340" aria-label="Personnes isolées sur fond blanc"></canvas></div><div class="compcell"><div class="three-label">03 · Noir et blanc</div><canvas id="smallPrepared" width="340" height="340" aria-label="Photo préparée"></canvas></div></div>
+<div class="artarea"><div class="three-label">04 · Fils noirs / clous</div><canvas id="artCanvas" width="820" height="820" aria-label="String art final"></canvas></div><div class="result-status" id="resultStatus">Importez une photo pour commencer la comparaison.</div>
+<div class="resultmeta hidden" id="resultMeta"><div class="stats"><div><strong id="statNails">—</strong><small>clous</small></div><div><strong id="statLines">—</strong><small>passages</small></div><div><strong id="statLength">—</strong><small>mètres estimés</small></div></div><div class="stepshead"><strong>Guide de fabrication</strong><output id="stepsOut">0 / 0</output></div><input class="steprange" type="range" id="stepRange" min="0" max="1" value="1"><div class="steps-actions"><button id="prevStep" type="button">← Précédent</button><strong id="instruction">Parcours complet</strong><button id="nextStep" type="button">Suivant →</button></div><div class="exportactions"><button id="png" type="button">↓ PNG</button><button id="svg" type="button">↓ SVG</button><button id="csv" type="button">↓ Guide CSV</button></div><p class="foot">Conseil : pour plusieurs personnes, privilégiez un cadrage serré du haut du corps et des visages. Le clou 0 est situé en haut du cercle, puis la numérotation tourne dans le sens des aiguilles d’une montre. Le parcours utilise un seul fil continu. Longueur indicative, prévoir une marge.</p></div>
 </div>
 </div>
-</main><footer class="footer"><div class="wrap footerinner"><span>FILIGRANE V3 · PORTRAITS EN FIL</span><span>La photo n’est pas téléversée. Le traitement se fait dans le navigateur.</span></div></footer>
+</main><footer class="footer"><div class="wrap footerinner"><span>FILIGRANE V4 · PORTRAITS EN FIL</span><span>La photo n’est pas téléversée. Le traitement se fait dans le navigateur.</span></div></footer>
 <noscript><div class="noscript">Activez JavaScript pour utiliser FILIGRANE.</div></noscript>
 <script>'use strict';
-// FILIGRANE V3. Application autonome. Traitement des photos dans le navigateur.
+// FILIGRANE V4. Application autonome. Traitement des photos dans le navigateur.
 // Uniquement le chargement facultatif des modèles MediaPipe demande Internet.
 const el = id => document.getElementById(id);
 const SIZE=256, RAD=.466, MODEL_BASE='https://cdn.jsdelivr.net/npm/@mediapipe/';
-const state={image:null,zoom:1,dx:0,dy:0,mode:'portrait',tool:'move',mask:new Float32Array(SIZE*SIZE),maskType:'',faces:[],brush:35,version:0,aiBusy:false,photoCanvas:null,worker:null,running:false,path:null,nails:220,didAuto:false};
+const state={image:null,zoom:1,dx:0,dy:0,mode:'portrait',tool:'move',mask:new Float32Array(SIZE*SIZE),maskType:'',faces:[],brush:35,version:0,aiBusy:false,photoCanvas:null,worker:null,running:false,path:null,nails:280,didAuto:false};
 const crop=el('cropCanvas'),cc=crop.getContext('2d');
 const prepared=el('preparedCanvas'),pc=prepared.getContext('2d');
 const source=el('sourceCanvas'),sc=source.getContext('2d');
 const smallPrep=el('smallPrepared'),spc=smallPrep.getContext('2d');
+const cutout=el('cutoutCanvas'),cutctx=cutout.getContext('2d');
 const art=el('artCanvas');
 const workPhoto=document.createElement('canvas');workPhoto.width=workPhoto.height=SIZE;
 const workCtx=workPhoto.getContext('2d',{willReadFrequently:true});
@@ -141,7 +142,13 @@ function processedImage(){
  const s=getSettings();renderPhoto();
  const d=workCtx.getImageData(0,0,SIZE,SIZE).data;
  const lum=new Float32Array(SIZE*SIZE),blur=new Float32Array(SIZE*SIZE),target=new Float32Array(SIZE*SIZE),weights=new Float32Array(SIZE*SIZE);
- for(let i=0;i<lum.length;i++)lum[i]=(.2126*d[4*i]+.7152*d[4*i+1]+.0722*d[4*i+2])/255;
+ let histogram=new Uint32Array(256),inside=0;
+ for(let i=0;i<lum.length;i++){
+   lum[i]=(.2126*d[4*i]+.7152*d[4*i+1]+.0722*d[4*i+2])/255;
+   if(s.mode==='standard'||state.mask[i]>.62){histogram[Math.round(lum[i]*255)]++;inside++;}
+ }
+ const percentile=p=>{let sum=0;for(let k=0;k<256;k++){sum+=histogram[k];if(sum>=inside*p)return k/255;}return 1;};
+ const qlow=percentile(.06),qhigh=percentile(.97),spread=Math.max(.28,qhigh-qlow);
  for(let y=0;y<SIZE;y++)for(let x=0;x<SIZE;x++){
    let v=0,n=0;
    for(let oy=-2;oy<=2;oy+=2)for(let ox=-2;ox<=2;ox+=2){const yy=bound(y+oy,0,SIZE-1),xx=bound(x+ox,0,SIZE-1);v+=lum[yy*SIZE+xx];n++;}
@@ -150,37 +157,27 @@ function processedImage(){
  const pixels=pc.createImageData(SIZE,SIZE);
  for(let y=0;y<SIZE;y++)for(let x=0;x<SIZE;x++){
    const i=y*SIZE+x;
-   const r=Math.hypot(x+0.5-SIZE/2,y+0.5-SIZE/2)/(SIZE*.467);
-   if(r>1){target[i]=0;weights[i]=3.2;for(let k=0;k<3;k++)pixels.data[4*i+k]=255;pixels.data[4*i+3]=255;continue;}
+   const r=Math.hypot(x+.5-SIZE/2,y+.5-SIZE/2)/(SIZE*.466);
+   if(r>1){target[i]=0;weights[i]=2;for(let k=0;k<3;k++)pixels.data[4*i+k]=255;pixels.data[4*i+3]=255;continue;}
    const nx=(x+.5)/SIZE,ny=(y+.5)/SIZE;
-   const mask=s.mode==='standard'?1:bound(state.mask[i]);
-   const background=s.mode==='standard'?1:s.background;
-   const keep=s.mode==='standard'?1:(background + (1-background)*Math.pow(mask,1.55));
+   const m=s.mode==='standard'?1:bound(state.mask[i]);
+   const insideSubject=s.mode==='standard'?1:smooth(.30,.74,m);
    const f=faceWeight(nx,ny,s);
-   const dark=bound(Math.pow(Math.max(0,1-lum[i]),.72)*s.contrast*0.92-.06);
-   const high=Math.max(0,blur[i]-lum[i]);
-   const contrastEdge=bound(high*2.55*s.detail);
-   const left=lum[y*SIZE+Math.max(0,x-1)],right=lum[y*SIZE+Math.min(SIZE-1,x+1)];
-   const up=lum[Math.max(0,y-1)*SIZE+x],down=lum[Math.min(SIZE-1,y+1)*SIZE+x];
-   const grad=bound(Math.hypot(right-left,down-up)*.72*s.detail);
-   const ml=state.mask[y*SIZE+Math.max(0,x-1)],mr=state.mask[y*SIZE+Math.min(SIZE-1,x+1)];
-   const mu=state.mask[Math.max(0,y-1)*SIZE+x],md=state.mask[Math.min(SIZE-1,y+1)*SIZE+x];
-   const maskEdge=bound((Math.abs(mr-ml)+Math.abs(md-mu))*1.95);
-   const interior=s.mode==='standard'?1:smooth(.16,.82,mask);
+   const near= (xx,yy)=>lum[bound(yy,0,SIZE-1)*SIZE+bound(xx,0,SIZE-1)];
+   const gradient=Math.hypot(near(x+1,y)-near(x-1,y),near(x,y+1)-near(x,y-1));
+   const dark=bound(1-(lum[i]-qlow)/spread);
+   const edge=bound(gradient*2.3*s.detail+Math.max(0,blur[i]-lum[i])*2*s.detail);
+   const maskAt=(xx,yy)=>state.mask[bound(yy,0,SIZE-1)*SIZE+bound(xx,0,SIZE-1)];
+   const maskEdge=s.mode==='standard'?0:bound((Math.abs(maskAt(x+2,y)-maskAt(x-2,y))+Math.abs(maskAt(x,y+2)-maskAt(x,y-2)))*1.05);
    let desired;
-   if(s.mode==='silhouette'){
-     desired=bound(maskEdge*1.38 + dark*0.18 + grad*0.18);
-   }else if(s.mode==='standard'){
-     desired=bound(dark*.74 + contrastEdge*.82 + grad*.24);
-   }else{
-     const faceBoost=.18 + f*s.face*1.15;
-     const bodyBoost=.14 + interior*.36;
-     desired=bound(maskEdge*1.05 + dark*(bodyBoost+faceBoost*.42) + contrastEdge*(.12+faceBoost) + grad*(.10+bodyBoost*.44));
-   }
-   desired=bound(desired*keep);
+   if(s.mode==='silhouette')desired=bound(maskEdge*.82 + dark*.32 + edge*.12);
+   else if(s.mode==='standard')desired=bound(dark*.79 + edge*.50);
+   else desired=bound(dark*(.65+f*s.face*.28) + edge*(.20+f*s.face*.58) + maskEdge*.73);
+   const region = s.mode==='standard'?1:(insideSubject*(1-s.background)+s.background);
+   desired=bound(Math.pow(desired*region,.92)*s.contrast);
    target[i]=desired;
-   // Fond : pénalité plus forte pour éviter les fils inutiles à travers le décor.
-   weights[i]=s.mode==='standard' ? (.45 + desired*3.0) : ((1-interior)*1.85 + interior*(1.2 + maskEdge*3.2 + f*s.face*7.0));
+   // Weighted SSE objective: non-subject pixels are white, yet any crossing filament costs ink.
+   weights[i]=s.mode==='standard' ? 1 : (1.1 + insideSubject*.55 + f*insideSubject*s.face*3.5);
    const grey=Math.round(255-255*desired);
    pixels.data[4*i]=pixels.data[4*i+1]=pixels.data[4*i+2]=grey;pixels.data[4*i+3]=255;
  }
@@ -191,8 +188,35 @@ function processedImage(){
  pc.lineWidth=1.2;pc.strokeStyle='#d0c3b5';pc.beginPath();pc.arc(prepared.width/2,prepared.height/2,prepared.width*.475,0,Math.PI*2);pc.stroke();
  return {target,weights};
 }
+function updateCutout(){
+ const ctx=cutctx,S=cutout.width;
+ ctx.fillStyle='#fff';ctx.fillRect(0,0,S,S);
+ if(!state.image)return;
+ renderPhoto();
+ const original=workCtx.getImageData(0,0,SIZE,SIZE);
+ const masked=ctx.createImageData(SIZE,SIZE);
+ const m=state.mask;
+ for(let i=0;i<SIZE*SIZE;i++){
+   const subject=state.mode==='standard'?1:bound((m[i]-.28)/.55);
+   const keep=subject*subject*(3-2*subject);
+   for(let c=0;c<3;c++)masked.data[i*4+c]=Math.round(255*(1-keep)+original.data[i*4+c]*keep);
+   masked.data[i*4+3]=255;
+ }
+ const temp=document.createElement('canvas');temp.width=temp.height=SIZE;
+ temp.getContext('2d').putImageData(masked,0,0);
+ ctx.save();clipCircle(ctx,S);ctx.drawImage(temp,0,0,S,S);ctx.restore();
+}
+function hasValidMask(){return state.mode==='standard'||(['ai','manual','demo'].includes(state.maskType));}
+function canGenerate(){return Boolean(state.image)&&!state.aiBusy&&hasValidMask();}
+function syncGenerateState(){
+ const btn=el('generate');btn.disabled=!canGenerate();
+ if(!state.image)btn.textContent='Choisir une photo pour commencer ↗';
+ else if(state.aiBusy)btn.textContent='Détourage des personnes en cours…';
+ else if(!hasValidMask())btn.textContent='Détourer les personnes avant de générer ↗';
+ else btn.textContent='Générer mon portrait en fils ↗';
+}
 function updatePrepared(){
- drawCrop();photoView(sc,source.width);
+ drawCrop();photoView(sc,source.width);updateCutout();
  if(!state.image){
    pc.fillStyle='#fff';pc.fillRect(0,0,prepared.width,prepared.height);
    spc.fillStyle='#fff';spc.fillRect(0,0,smallPrep.width,smallPrep.height);
@@ -204,9 +228,9 @@ function invalid(){
  if(state.worker){state.worker.terminate();state.worker=null;}
  state.running=false;state.path=null;
  el('resultMeta').classList.add('hidden');el('cancel').classList.add('hidden');el('progress').classList.add('hidden');
- el('generate').disabled=!state.image;el('generate').textContent=state.image?'Générer mon portrait en fils ↗':'Choisir une photo pour commencer ↗';
+ syncGenerateState();
  el('stateBadge').className='badge';el('stateBadge').textContent='À GÉNÉRER';
- el('resultStatus').textContent=state.image?'Image préparée : vous pouvez maintenant générer le tableau.':'Importez une photo pour commencer la comparaison.';
+ el('resultStatus').textContent=!state.image?'Choisissez une photo.':!hasValidMask()?'Le détourage des personnes doit être confirmé avant de fabriquer les fils.':'Sujet préparé : vérifiez les personnes sur fond blanc avant de lancer les fils.';
  drawArt([],0,art,getSettings().nails);
 }
 let updatePending=false;
@@ -219,9 +243,9 @@ function setPhoto(img){
  el('zoom').value=100;el('zoomOut').textContent='100 %';
  el('photoTitle').textContent='Changer de photographie';
  el('cropBox').classList.remove('hidden');el('zoomBox').classList.remove('hidden');
- el('autoMask').disabled=false;el('resetMask').disabled=false;
+ el('autoMask').disabled=false;el('resetMask').disabled=false;el('blankMask').disabled=false;
  defaultMask();setTool('move');updateFaces();
- writeStatus('Masque de premier plan approximatif. Touchez <strong>Isoler les personnes (IA V3)</strong> pour garder uniquement les personnes et supprimer le fond.');
+ writeStatus('✦ <strong>Détourage nécessaire.</strong> Attendez que les personnes soient isolées (aperçu 02) avant la génération.','busy');
  changed();
  // Tentative automatique non bloquante : si Internet ou le modèle est indisponible, on garde l’outil manuel.
  if(navigator.onLine)setTimeout(()=>{if(!state.didAuto&&state.image===img)runAI();},400);
@@ -256,7 +280,7 @@ function samplePortrait(){
    mask[y*SIZE+x]=1-smooth(.89,1.08,Math.min(h,b));
  }
  state.mask=mask;state.maskType='demo';state.faces=[{x:.5,y:.47,r:.205}];updateFaces();
- writeStatus('Portrait de démonstration V3 prêt. Utilisez votre propre photo pour essayer le détourage automatique.', 'ok');changed();
+ writeStatus('Portrait de démonstration V4 prêt. Utilisez votre propre photo pour essayer le détourage automatique.', 'ok');changed();
 }
 function updateFaces(){el('faceCounter').textContent='Repères visages : '+state.faces.length+(state.faces.length?' (priorité à ces zones)':' (centre par défaut)');}
 function clampView(){
@@ -272,6 +296,7 @@ function setTool(tool){
  el('cropTip').textContent=tool==='move'?'Glissez pour déplacer la photo.':tool==='face'?'Touchez le centre de chaque visage.':tool==='erase'?'Passez le doigt pour supprimer une zone du sujet.':'Passez le doigt pour conserver une zone du sujet.';
 }
 function paintMask(nx,ny,keep){
+ if(!hasValidMask()&&state.mode!=='standard'){state.mask.fill(0);}
  const r=state.brush/360*SIZE,px=nx*SIZE,py=ny*SIZE;
  for(let y=Math.max(0,Math.floor(py-r));y<Math.min(SIZE,Math.ceil(py+r));y++)for(let x=Math.max(0,Math.floor(px-r));x<Math.min(SIZE,Math.ceil(px+r));x++){
    const dist=Math.hypot(x-px,y-py);if(dist>r)continue;
@@ -279,6 +304,7 @@ function paintMask(nx,ny,keep){
    const i=y*SIZE+x;state.mask[i]=state.mask[i]*(1-influence)+(keep?1:0)*influence;
  }
  state.maskType='manual';
+ writeStatus('✓ Masque retouché manuellement. Vérifiez que l’aperçu 02 ne contient aucun décor avant la génération.','ok');
 }
 let drag=null;
 function relativePoint(e){const rect=crop.getBoundingClientRect();return {x:bound((e.clientX-rect.left)/rect.width),y:bound((e.clientY-rect.top)/rect.height)};}
@@ -390,18 +416,11 @@ function refineSubjectMask(mask,faces=[]){
  bin=closeMask(openMask(bin,1),2);
  let comps=labelComponents(bin);
  if(!comps.length)return blurMask(mask);
- let keep=[];
- if(faces.length){
-   keep=comps.filter(c=>faces.some(f=>faceInsideComp(f,c)));
-   if(!keep.length){
-     keep=comps.slice().sort((a,b)=>b.area-a.area).slice(0,Math.min(3,comps.length));
-   }
- }else{
-   keep=comps.slice().sort((a,b)=>{
-     const da=Math.hypot(a.cx-.5,(a.cy-.52)*1.15), db=Math.hypot(b.cx-.5,(b.cy-.52)*1.15);
-     return (b.area*1.0-db*14000)-(a.area*1.0-da*14000);
-   }).slice(0,Math.min(2,comps.length));
- }
+ // Conserver toutes les personnes de taille significative (familles, groupes),
+ // même si le détecteur de visages manque un enfant ou un profil.
+ const biggest=Math.max(...comps.map(c=>c.area));
+ let keep=comps.filter(c=>c.area>=Math.max(110,biggest*.045) || faces.some(f=>faceInsideComp(f,c)));
+ if(!keep.length)keep=comps.slice().sort((a,b)=>b.area-a.area).slice(0,1);
  const out=new Uint8Array(mask.length);
  for(const c of keep){
    for(const id of c.pixels)out[id]=1;
@@ -425,12 +444,32 @@ function parseFaceDetections(result){
    return {x:bound(x??.5),y:bound(y??.4),r:bound(Math.max(w,h)*.42,.11,.32)};
  }).filter(f=>Number.isFinite(f.x)&&Number.isFinite(f.y)).slice(0,8);
 }
+async function fallbackBodyPix(canvas){
+ // Second moteur indépendant. Ne s'utilise que si MediaPipe ne donne pas de masque.
+ await scriptLoad('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js','tf');
+ await scriptLoad('https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.2.1/dist/body-pix.min.js','bodyPix');
+ const model=await window.bodyPix.load({architecture:'MobileNetV1',outputStride:16,multiplier:0.75,quantBytes:2});
+ const seg=await model.segmentPerson(canvas,{flipHorizontal:false,internalResolution:'medium',segmentationThreshold:.62});
+ if(!seg?.data)throw new Error('BodyPix n’a reconnu aucune personne');
+ const tmp=document.createElement('canvas');tmp.width=seg.width;tmp.height=seg.height;
+ const ctx=tmp.getContext('2d',{willReadFrequently:true});const data=ctx.createImageData(seg.width,seg.height);
+ for(let i=0;i<seg.data.length;i++){
+   const value=seg.data[i]?255:0;
+   data.data[i*4]=value;data.data[i*4+1]=value;data.data[i*4+2]=value;data.data[i*4+3]=255;
+ }
+ ctx.putImageData(data,0,0);
+ const sized=document.createElement('canvas');sized.width=sized.height=SIZE;
+ const c=sized.getContext('2d',{willReadFrequently:true});c.drawImage(tmp,0,0,SIZE,SIZE);
+ const pix=c.getImageData(0,0,SIZE,SIZE).data,mask=new Float32Array(SIZE*SIZE);
+ for(let i=0;i<mask.length;i++)mask[i]=pix[i*4]/255;
+ return mask;
+}
 async function runAI(){
  if(!state.image||state.aiBusy)return;
- state.aiBusy=true;state.didAuto=true;el('autoMask').disabled=true;
+ state.aiBusy=true;state.didAuto=true;el('autoMask').disabled=true;syncGenerateState();
  const stamp=state.version,canvas=document.createElement('canvas');canvas.width=canvas.height=SIZE;
  renderPhoto();canvas.getContext('2d').drawImage(workPhoto,0,0);
- writeStatus('✦ V3 : isolation stricte des personnes… premier plan, visages et silhouette en priorité.', 'busy');
+ writeStatus('✦ V4 : isolation stricte des personnes… premier plan, visages et silhouette en priorité.', 'busy');
  try{
    const base=MODEL_BASE+'selfie_segmentation@0.1/';
    const fb=MODEL_BASE+'face_detection@0.4/';
@@ -452,65 +491,74 @@ async function runAI(){
    })());
    const [segResult,faceResult]=await Promise.allSettled(jobs);
    if(stamp!==state.version)return;
-   if(segResult.status!=='fulfilled')throw segResult.reason||new Error('Segmentation impossible');
+   let rawMask,engine='MediaPipe';
+   if(segResult.status==='fulfilled')rawMask=segResult.value;
+   else{
+     writeStatus('✦ Premier moteur indisponible. Essai d’un deuxième moteur de détourage (BodyPix)…','busy');
+     rawMask=await fallbackBodyPix(canvas);engine='BodyPix';
+   }
    const faces=faceResult.status==='fulfilled'&&Array.isArray(faceResult.value)?faceResult.value:[];
-   const strictMask=refineSubjectMask(segResult.value,faces);
+   if(stamp!==state.version)return;
+   const strictMask=refineSubjectMask(rawMask,faces);
    const present=strictMask.reduce((a,b)=>a+(b>.42?1:0),0)/strictMask.length;
-   if(present<.02)throw new Error('Aucune personne exploitable reconnue');
+   if(present<.02||present>.82)throw new Error('Masque non exploitable : personnes absentes ou fond encore présent');
    state.mask=strictMask;state.maskType='ai';
+   el('background').value=0;el('backgroundOut').textContent='0 %';
    state.faces=faces;updateFaces();changed();
-   if(faces.length)writeStatus('✓ V3 : '+faces.length+' visage(s) détecté(s) et personnes isolées. Le fond est maintenant presque totalement ignoré.','ok');
-   else writeStatus('✓ V3 : personnes isolées. Le fond est maintenant presque totalement ignoré. Vous pouvez corriger le masque si besoin.','ok');
+   if(faces.length)writeStatus('✓ '+engine+' : '+faces.length+' visage(s) repéré(s). Personnes isolées : vérifiez l’aperçu 02 (fond entièrement blanc).','ok');
+   else writeStatus('✓ '+engine+' : personnes isolées. Vérifiez l’aperçu 02, et retouchez avec Garder / Effacer si nécessaire.','ok');
  }catch(e){
-   if(stamp===state.version)writeStatus('La V3 n’a pas pu isoler automatiquement les personnes ('+String(e.message||'connexion')+'). Utilisez le masque manuel Garder / Effacer puis relancez.', '');
- }finally{state.aiBusy=false;el('autoMask').disabled=!state.image;}
+   if(stamp===state.version){state.maskType='approx';writeStatus('⚠ <strong>Échec du détourage IA :</strong> '+String(e.message||'connexion')+'. Aucun fil ne sera calculé avant un masque valide. Réessayez, ou choisissez « Masque vide » et peignez les personnes.');changed();}
+ }finally{state.aiBusy=false;el('autoMask').disabled=!state.image;syncGenerateState();}
 }
 // Le worker retient uniquement les lignes qui réduisent encore l'écart au portrait préparé.
 function filamentWorker(){
- const INK=.135;
+ const INK=.045;
  self.onmessage=e=>{
   if(e.data.type!=='generate')return;
   try{
    const {pixels,weights,nails,maxLines,size}=e.data;
    const residual=new Float32Array(pixels),wt=new Float32Array(weights);
-   const x=new Int16Array(nails),y=new Int16Array(nails);
+   const xs=new Int16Array(nails),ys=new Int16Array(nails);
    for(let i=0;i<nails;i++){
-     const a=-Math.PI/2+2*Math.PI*i/nails;x[i]=Math.round(size/2+Math.cos(a)*size*.466);y[i]=Math.round(size/2+Math.sin(a)*size*.466);
+     const a=-Math.PI/2+2*Math.PI*i/nails;xs[i]=Math.round(size/2+Math.cos(a)*size*.466);ys[i]=Math.round(size/2+Math.sin(a)*size*.466);
    }
-   const pair=new Uint8Array(nails*nails),path=new Uint16Array(maxLines+1);
+   // Reuse selected chords at most twice (physical continuous thread still valid).
+   const used=new Uint8Array(nails*nails),path=new Uint16Array(maxLines+1);
    let current=0,done=0;path[0]=0;
-   const gap=Math.max(5,Math.round(nails*.045));
+   const gap=Math.max(7,Math.round(nails*.06));
    for(let k=0;k<maxLines;k++){
      let best=-1,bestScore=-Infinity;
      for(let next=0;next<nails;next++){
        const angular=Math.abs(next-current);
-       if(angular<gap||nails-angular<gap||pair[current*nails+next])continue;
-       const xa=x[current],ya=y[current],xb=x[next],yb=y[next];
+       if(angular<gap||nails-angular<gap||used[current*nails+next]>=2)continue;
+       const xa=xs[current],ya=ys[current],xb=xs[next],yb=ys[next];
        const steps=Math.max(Math.abs(xb-xa),Math.abs(yb-ya));
        let gain=0;
-       // Évaluation du gain pondéré : valeur d'une ligne sous le masque de premier plan.
        for(let t=0;t<=steps;t++){
          const xx=Math.round(xa+(xb-xa)*t/steps),yy=Math.round(ya+(yb-ya)*t/steps);
          const id=yy*size+xx;
          gain+=(2*INK*residual[id]-INK*INK)*wt[id];
        }
-       const score=gain/Math.pow(steps+1,.40);
+       const score=gain / Math.pow(steps+1,.25);
        if(score>bestScore){bestScore=score;best=next;}
      }
-     if(best<0||((bestScore<=.001||!Number.isFinite(bestScore))&&k>=Math.min(maxLines,500)))break;
-     pair[current*nails+best]=pair[best*nails+current]=1;
-     const xa=x[current],ya=y[current],xb=x[best],yb=y[best];
+     // Never add a thread that makes the approximation worse.
+     if(best<0 || bestScore<=0 || !Number.isFinite(bestScore))break;
+     used[current*nails+best]++;used[best*nails+current]++;
+     const xa=xs[current],ya=ys[current],xb=xs[best],yb=ys[best];
      const steps=Math.max(Math.abs(xb-xa),Math.abs(yb-ya));
      for(let t=0;t<=steps;t++){
        const xx=Math.round(xa+(xb-xa)*t/steps),yy=Math.round(ya+(yb-ya)*t/steps),id=yy*size+xx;
        residual[id]-=INK;
-       if(xx>0)residual[id-1]-=INK*.07;
-       if(xx<size-1)residual[id+1]-=INK*.07;
-       if(yy>0)residual[id-size]-=INK*.07;
-       if(yy<size-1)residual[id+size]-=INK*.07;
+       // Tiny diffusion approximates fiber coverage rather than purely 1-pixel sampling.
+       if(xx>0)residual[id-1]-=INK*.09;
+       if(xx<size-1)residual[id+1]-=INK*.09;
+       if(yy>0)residual[id-size]-=INK*.09;
+       if(yy<size-1)residual[id+size]-=INK*.09;
      }
      current=best;path[++done]=best;
-     if(done%75===0){self.postMessage({type:'progress',done,total:maxLines,partial:Array.from(path.subarray(0,done+1))});}
+     if(done%75===0)self.postMessage({type:'progress',done,total:maxLines,partial:Array.from(path.subarray(0,done+1))});
    }
    const final=path.slice(0,done+1);
    self.postMessage({type:'done',path:final.buffer,early:done<maxLines},[final.buffer]);
@@ -527,7 +575,7 @@ function drawArt(path,count,canvas,nails,highlight=false){
  ctx.save();clipCircle(ctx,size);ctx.fillStyle='#fff';ctx.fillRect(0,0,size,size);
  if(path?.length>1){
    const n=Math.min(count,path.length-1);
-   ctx.strokeStyle='#141414';ctx.lineCap='round';ctx.lineWidth=Math.max(.55,size/820*1.3);ctx.globalAlpha=.17;
+   ctx.strokeStyle='#141414';ctx.lineCap='round';ctx.lineWidth=Math.max(.75,size/820*1.25);ctx.globalAlpha=.19;
    for(let i=0;i<n;i++){
      const a=pts[path[i]],b=pts[path[i+1]];if(!a||!b)continue;
      ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();
@@ -548,6 +596,7 @@ function stopWorker(){
 }
 function start(){
  if(!state.image||state.running)return;
+ if(state.aiBusy||!hasValidMask()){error('Attendez le détourage des personnes, ou sélectionnez le mode Photo entière.');return;}
  const settings=getSettings();
  if(!Number.isFinite(settings.diameter)||settings.diameter<10||settings.diameter>200){error('Le diamètre doit être entre 10 et 200 cm.');return;}
  clearError();invalid();
@@ -598,18 +647,18 @@ function updateResults(){
 function download(blob,filename,share=false){
  const file=new File([blob],filename,{type:blob.type});
  if(share&&navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
-   navigator.share({files:[file],title:'Filigrane V3'}).catch(e=>{if(e.name!=='AbortError')save(blob,filename);});
+   navigator.share({files:[file],title:'Filigrane V4'}).catch(e=>{if(e.name!=='AbortError')save(blob,filename);});
  }else save(blob,filename);
 }
 function save(blob,filename){const a=document.createElement('a');const url=URL.createObjectURL(blob);a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),40000);}
-function exportPNG(){if(!state.path)return;const c=document.createElement('canvas');c.width=c.height=1800;drawArt(state.path,state.path.length-1,c,state.nails);c.toBlob(blob=>{if(blob)download(blob,'filigrane-v2-portrait.png',true);},'image/png');}
+function exportPNG(){if(!state.path)return;const c=document.createElement('canvas');c.width=c.height=1800;drawArt(state.path,state.path.length-1,c,state.nails);c.toBlob(blob=>{if(blob)download(blob,'filigrane-v4-portrait.png',true);},'image/png');}
 function exportSVG(){
  if(!state.path)return;const path=state.path,n=state.nails,pts=nailsXY(n,1000);
- let svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000"><rect width="1000" height="1000" fill="#fcfaf5"/><circle cx="500" cy="500" r="466" stroke="#cbb5a7" fill="#fff" stroke-width="2"/><g fill="none" stroke="#141414" stroke-opacity=".17" stroke-width="1.58">`;
+ let svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000"><rect width="1000" height="1000" fill="#fcfaf5"/><circle cx="500" cy="500" r="466" stroke="#cbb5a7" fill="#fff" stroke-width="2"/><g fill="none" stroke="#141414" stroke-opacity=".19" stroke-width="1.55">`;
  for(let i=1;i<path.length;i++){const a=pts[path[i-1]],b=pts[path[i]];svg+=`<path d="M ${a[0].toFixed(2)} ${a[1].toFixed(2)} L ${b[0].toFixed(2)} ${b[1].toFixed(2)}"/>`;}
  svg+='</g><g fill="#84786c">';for(const p of pts)svg+=`<circle cx="${p[0].toFixed(2)}" cy="${p[1].toFixed(2)}" r="2.2"/>`;
  svg+='</g><circle cx="500" cy="34" r="5" fill="#b45c42"/></svg>';
- download(new Blob([svg],{type:'image/svg+xml'}),'filigrane-v2-parcours.svg');
+ download(new Blob([svg],{type:'image/svg+xml'}),'filigrane-v4-parcours.svg');
 }
 function exportCSV(){
  if(!state.path)return;const path=state.path,n=state.nails,diameter=+el('diameter').value||50;
@@ -620,13 +669,14 @@ function exportCSV(){
  }
  rows.push('');rows.push('Clou 0 en haut, numerotation horaire');rows.push('Parcours continu sans couper le fil');
  rows.push('Longueur estimee avec 2 cm de marge par passage : '+((len+2*(path.length-1))/100).toFixed(1).replace('.',',')+' m');
- download(new Blob(['\ufeff',rows.join('\r\n')],{type:'text/csv;charset=utf-8'}),'filigrane-v2-guide-clous.csv');
+ download(new Blob(['\ufeff',rows.join('\r\n')],{type:'text/csv;charset=utf-8'}),'filigrane-v4-guide-clous.csv');
 }
 // Installation et événements.
 el('photoInput').addEventListener('change',e=>{loadFile(e.target.files?.[0]);e.target.value='';});
 el('demo').addEventListener('click',samplePortrait);
 el('autoMask').addEventListener('click',runAI);
-el('resetMask').addEventListener('click',()=>{defaultMask();writeStatus('Masque de portrait approximatif réinitialisé. Lancez le détourage IA ou retouchez les personnes.');changed();});
+el('resetMask').addEventListener('click',()=>{defaultMask();writeStatus('Détourage à refaire : touchez « Détourer les personnes (IA) ».','busy');changed();});
+el('blankMask').addEventListener('click',()=>{state.mask.fill(0);state.maskType='manual';writeStatus('Masque vide : utilisez « Garder » sur les personnes, puis vérifiez l’aperçu 02.','busy');changed();});
 for(const b of document.querySelectorAll('[data-mode]'))b.addEventListener('click',()=>{
  state.mode=b.dataset.mode;for(const other of document.querySelectorAll('[data-mode]'))other.setAttribute('aria-pressed',String(other===b));
  changed();
@@ -653,7 +703,7 @@ el('nextStep').addEventListener('click',()=>{el('stepRange').value=Math.min(+el(
 el('png').addEventListener('click',exportPNG);
 el('svg').addEventListener('click',exportSVG);
 el('csv').addEventListener('click',exportCSV);
-// Une V3 embarquée dans index.html reste utilisable sans style.css/app.js séparés.
+// Une V4 embarquée dans index.html reste utilisable sans style.css/app.js séparés.
 // Le service worker fourni est network-first pour diffuser les corrections GitHub Pages.
 if('serviceWorker' in navigator&&location.protocol==='https:')window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(()=>{}));
 updatePrepared();invalid();
