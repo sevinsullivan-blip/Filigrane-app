@@ -1,5 +1,5 @@
-// FILIGRANE V2 — mise à jour du cache après remplacement des fichiers GitHub.
-const CACHE='filigrane-v2-20261121-1';
+// FILIGRANE V3 — cache mis à jour pour forcer le rechargement de la nouvelle version.
+const CACHE='filigrane-v3-20261121-1';
 const APP_FILES=['./','./index.html'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);
