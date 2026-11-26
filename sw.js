@@ -1,5 +1,5 @@
-// FILIGRANE V6 — cache mis à jour pour forcer le rechargement de la nouvelle version.
-const CACHE='filigrane-v6-20261121-2';
+// FILIGRANE V7 — cache mis à jour pour forcer le rechargement de la nouvelle version.
+const CACHE='filigrane-v7-20261122-1';
 const APP_FILES=['./','./index.html'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);
